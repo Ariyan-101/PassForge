@@ -73,7 +73,7 @@ const faqs = [
 function Brand({ footer = false }: { footer?: boolean }) {
   return (
     <a className={`brand${footer ? " footer-brand" : ""}`} href="#top" aria-label="PassForge home">
-      <img src="/passforge-mark.svg" width="38" height="38" alt="" />
+      <img src={`${import.meta.env.BASE_URL}passforge-mark.svg`} width="38" height="38" alt="" />
       <span className="brand-name">Pass<span>Forge</span></span>
     </a>
   );
